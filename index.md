@@ -3,7 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 ---
-# **FactoCloudConnect**
+# **FactoMes**
 {: style="text-align:center;"}
 
 ![](./assets/images/optebiz-logo.png)
