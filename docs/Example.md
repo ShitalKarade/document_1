@@ -14,13 +14,13 @@ Creating a new resource in FactoMes
  
 ![](../../assets/images/example/example-2.png)
 {: style="text-align:center;"}
-*  Note: It is essential to save the project after creating a transaction. Failure to do so may result in the resource not being available later
+*  Note: _It is essential to save the project after creating a transaction. Failure to do so may result in the resource not being available later_
 
  *  At the top of the screen, user can select the “Site” and “Area” of their Enterprise from the given dropdowns
 
 ![](../../assets/images/example/example-3.png)
 {: style="text-align:center;"}
-*  Note: The table data will be displayed as per “Site” and “Area” selection
+*  Note: _The table data will be displayed as per “Site” and “Area” selection_
 
  *  In the left hand side, there is a tree node from which user can select the screen that they want to see. Equipment screen will be displayed initially by default(It can be changed as per Enterprise requirement)
 
@@ -39,17 +39,15 @@ Creating a new resource in FactoMes
 
  *  If any of the required field is not filled and clicked on “Save” button then the below error popup message will be displayed and after clicking on “OK” button, the “Add” popup screen will appear again with highlighted field which needs to be filled
 
-![](../../assets/images/example/example-7.png)
-{: style="text-align:left;"}
-![](../../assets/images/example/example-8.png)
-{: style="text-align:right;"}
+![](../../assets/images/example/example-7.png)![](../../assets/images/example/example-8.png)
+{: style="text-align:center;"}
 
  * While adding the data, If already existing ID entered and clicked on “Save” button  then the below error popup message will be displayed
  * Once the required fields are filled and clicked on “Save” button then the row selection will move to newly added row
  * After the user clicks on “Edit” button, a popup window will be appeared on screen to modify the details as below and only the editable fields will be enabled and others will be in disabled mode(which cannot be modified from userlevel).  
  * After the user clicks on “Add” button, a popup window will be appeared on screen to enter the details as below
  * Once the fields are modified and clicked on “Save” button then the selected row will get updated
- *	Note: It is essential to select the row in case of Edit and Delete actions
+ *	Note: _It is essential to select the row in case of Edit and Delete actions_
  *	After the user clicks on “Delete” button, a popup window will be appeared on screen to update the EffectiveEndDate as below
  * Once the EffectiveEndDate field is selected and clicked on “Save” button then the same will get updated in the selected row
  *	After the user clicks on “Upload” button, a popup window will be appeared on screen as below
