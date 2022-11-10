@@ -16,13 +16,13 @@ Creating a new resource in FactoMes
 {: style="text-align:center;"}
 *  Note: It is essential to save the project after creating a transaction. Failure to do so may result in the resource not being available later
 
- *  At the top of the screen, user can select the “Site” and “Area” of their Enterprize from the given dropdowns
+ *  At the top of the screen, user can select the “Site” and “Area” of their Enterprise from the given dropdowns
 
 ![](../../assets/images/example/example-3.png)
 {: style="text-align:center;"}
 *  Note: The table data will be displayed as per “Site” and “Area” selection
 
- *  In the left hand side, there is a tree node from which user can select the screen that they want to see. Equipment screen will be displayed initially by default(It can be changed as per Enterprize requirement)
+ *  In the left hand side, there is a tree node from which user can select the screen that they want to see. Equipment screen will be displayed initially by default(It can be changed as per Enterprise requirement)
 
 ![](../../assets/images/example/example-4.png)
 {: style="text-align:center;"}
