@@ -3,113 +3,63 @@ layout: default
 title: Example
 nav_order: 8
 ---
-# Create Transaction:
-Create Transaction for Kafka with JSON Data Format
- *  Right Click on ‘FactoCloudConnect’
+# Creating Resource:
+Creating a new resource in FactoMes
+ *  Create resource: - Right-click on the FactoGrid project resource in the Project browser tree
 
-![](../../assets/images/example/resource.png)
+![](../../assets/images/example/example-1.png)
 {: style="text-align:center;"}
- *  Create ‘New Transaction’. Enter Transaction name and click on ‘Create   Transaction’ button
+
+ *  After creating a resource, the screen will be appeared as below
  
-![](../../assets/images/example/resourcenodecreation.png)
+![](../../assets/images/example/example-2.png)
 {: style="text-align:center;"}
- *  Specify values for Connector Type’, ‘Connector’, ‘Connection’, and type TopicName.  In the Config section select ‘Data Format’. Now click on the ‘Submit’ button
+*  Note: It is essential to save the project after creating a transaction. Failure to do so may result in the resource not being available later
 
-![](../../assets/images/example/Connecors.png)
+ *  At the top of the screen, user can select the “Site” and “Area” of their Enterprize from the given dropdowns
+
+![](../../assets/images/example/example-3.png)
 {: style="text-align:center;"}
-### Tag Browser
-*  In Tag Browser, select ‘FactCloudConnect’.
+*  Note: The table data will be displayed as per “Site” and “Area” selection
 
-![](../../assets/images/example/tagbrowser.png)
-{: style="text-align:center;"}
-*  Create tags inside the ProducerTag folder and Expand the Producer tag folder then see tags  (See below screen)
+ *  In the left hand side, there is a tree node from which user can select the screen that they want to see. Equipment screen will be displayed initially by default(It can be changed as per Enterprize requirement)
 
-![](../../assets/images/example/produerTags.png)
-{: style="text-align:center;"}
-### Config
-*  Use data format which is available in “Data Format” dropdown (i.e JSON, CSV, AVRO, and SPARKPLUGB) also choose separator (i.e COMMA, NEXTLINECHAR, SEMICOLON, and SPACE)
-
-![](../../assets/images/example/datatype.png)
-{: style="text-align:center;"}
-We can add 63000 tags in only  ‘SPARKPLUGB’ data format and in case the user enters tags greater than 63000 (i.e Message size is >= 5MB) then the system display message popup as below:
-
-![](../../assets/images/example/sizemsg.png)
+![](../../assets/images/example/example-4.png)
 {: style="text-align:center;"}
 
-![](../../assets/images/example/tagpermsg.png)
-{: style="text-align:center;"}
-   * And If Split requires then use the “Tag per Message” value  (For Ex- In Producer tags have 1,00,000 tags and Tag per Message is 10,000 then it sends the message in 10  batches)
+ *  In the right hand side, there are buttons for Add, Edit, Delete and Upload so that user can modify the data
 
-   * STORE_AND_FORWARD: "If this box is checked, the unsent data will be stored in jms in case of connection loss"     
-   * IS_SEQUENCIAL: Checking this box ensures that when a connection is restored, the data stored earlier through “STORE_AND_FORWARD” is processed first before any new message is queued.                     
-   *  ACTIVEMQURL  : "URL of External ActiveMQ Server"
-
-### Triggers
-
-Triggers allow the users to dynamically push data either by using them, timer feature or on tag change:
-
-![](../../assets/images/example/timetrigger.png)
-{: style="text-align:center;"}
-There are four available trigger types:
- * **Timer:**  This is used to push data periodically at specific time intervals. 
-
-![](../../assets/images/example/trigger.png)
-{: style="text-align:center;"}
- * **OnTagChange:** This trigger is configured to push data whenever the value of a tag changes. It can be configured for pre-specified tags at the following path(if AllTagTrigger is true then it read the tags from ProducerTag Folder else read tags from TriggerTag Folder):
-**Transaction_Name/ ProducerTags/…**          
-               **OR**
-**Transaction_Name/ TriggerTags/…** 
-
-![](../../assets/images/example/ontagchangetrigger.png)
-{: style="text-align:center;"}
-Note : In OnTagChangeAndTimer And OnTagValueChange,Data Push Interval is always greater than Tag Scan Timer.
-
-
-* **OnTagChangeAndTimer:** This is a combination of the above two. As the name specifies, it can be configured to send data whenever a tag value changes AND also periodically as per the specified timer. 
-
-![](../../assets/images/example/ontagchangeandtimertrigger.png)
-{: style="text-align:center;"}
-* **OnTagValueChange:** Like OnTagChange, this allows a user to send data on certain conditions specified by the user. However, here multiple conditions can be added to multiple tags created under the path 
- **Transaction_Name/ TriggerTags/…**
- 
-![](../../assets/images/example/valuechangetrigger.png)
-{: style="text-align:center;"}
- if the user has not selected ‘all tag trigger’ checkbox also does not set any trigger rules and click on submit button then the system displays the below popup message 
- 
- ![](../../assets/images/example/triggerrulemsg.png)
-{: style="text-align:center;"}
-After the user clicks on “Add” button
-
-![](../../assets/images/example/createtriggerrulemsg.png)
-{: style="text-align:center;"}
-### Start Transaction
-
-* Clicking on the ‘Start’ button will display a popup window with “Transaction Started successfully” text with the “OK” button
-
-![](../../assets/images/example/starttransactionbtn.png)
+![](../../assets/images/example/example-5.png)
 {: style="text-align:center;"}
 
-![](../../assets/images/example/startbtn.png)
-{: style="text-align:center;"}
-* “Running” Notification at the bottom indicates that the transaction is in progress. 
-### Stop Transaction
+ *  After the user clicks on “Add” button, a popup window will be appeared on screen to enter the details as below
 
-![](../../assets/images/example/stopbtn.png)
-{: style="text-align:center;"}
-Clicking on the ‘Stop’ button will display a popup window with “Transaction  Stopped successfully” text with the “OK” button
-
-![](../../assets/images/example/transactionstop.png)
+![](../../assets/images/example/example-6.png)
 {: style="text-align:center;"}
 
-### Delete Transaction
+ *  If any of the required field is not filled and clicked on “Save” button then the below error popup message will be displayed and after clicking on “OK” button, the “Add” popup screen will appear again with highlighted field which needs to be filled
 
-Deleting a transaction is a two-step process:
+![](../../assets/images/example/example-7.png)
+{: style="text-align:left;"}
+![](../../assets/images/example/example-8.png)
+{: style="text-align:right;"}
 
-![](../../assets/images/example/deleteoption.png)
-{: style="text-align:center;"}
-* Step 1: Click on the Delete button. This will delete the configuration saved for this transaction and the tag structure associated with it in the tag browser
-
-![](../../assets/images/example/deletetransaction.png)
-{: style="text-align:center;"}
-* Step 2: Right-click on that transaction node in Project Browser Tree under FactoCloudConnect and select the delete option to remove that node 
+ * While adding the data, If already existing ID entered and clicked on “Save” button  then the below error popup message will be displayed
+ * Once the required fields are filled and clicked on “Save” button then the row selection will move to newly added row
+ * After the user clicks on “Edit” button, a popup window will be appeared on screen to modify the details as below and only the editable fields will be enabled and others will be in disabled mode(which cannot be modified from userlevel).  
+ * After the user clicks on “Add” button, a popup window will be appeared on screen to enter the details as below
+ * Once the fields are modified and clicked on “Save” button then the selected row will get updated
+ *	Note: It is essential to select the row in case of Edit and Delete actions
+ *	After the user clicks on “Delete” button, a popup window will be appeared on screen to update the EffectiveEndDate as below
+ * Once the EffectiveEndDate field is selected and clicked on “Save” button then the same will get updated in the selected row
+ *	After the user clicks on “Upload” button, a popup window will be appeared on screen as below
+ *	Once the user clicks on “Upload” button in the popup screen, the file explorer will get opened from where user can select the file for upload and then the user should click on “Import” button to upload the file
+ *	User can also get File Template from the “Download Data Template” button and then they should fill the required data in it and upload the same file using “Upload” and “Import” buttons as above mentioned step
+ *	Once the File is uploaded, user should click on “Validate” button and then the file will be displayed as below along with the status and then click on “Save” button to save the data
+ *	While validating, if any errors then the below popup will be displayed and user should check the status to know an exact issue with the data
+ *	The major purpose of this “Upload” button is to bulk upload the data which can save time and energy
+ *	User can check the parent’s table properties in the child table(bottom table) by selecting the row from the parent table
+ *	Based on the parent table’s row selection, data will be displayed in the child table
+ *	User can perform the actions like Add, Edit, Delete and Upload in the child table also as same as Parent table
+ *	User can perform search on both the parent table as well on the child table
 
