@@ -16,17 +16,17 @@ Equipment screen in FactoMes module in Designer
 EquipmentClass screen in FactoMes module in Designer
  ![](../../../assets/images/screens/equipmentclass.png) 
 
- ## Material
+## Material
 Material screen in FactoMes module in Designer
- ![](../../../assets/images/screens/material.png)
+ ![](../../../assets/images/screens/material.png) 
 
 ## MaterialClass
 MaterialClass screen in FactoMes module in Designer
  ![](../../../assets/images/screens/materialclass.png) 
 
- ## Person
+## Person
 Person screen in FactoMes module in Designer
- ![](../../../assets/images/screens/person.png)
+ ![](../../../assets/images/screens/person.png) 
 
 ## PersonClass
 PersonClass screen in FactoMes module in Designer
